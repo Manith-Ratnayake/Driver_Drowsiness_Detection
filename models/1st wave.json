@@ -1,0 +1,428 @@
+1st wave 
+common param in this wave
+"projection_head": False,
+"proj_size": 0
+"image_height": 60,
+"image_width": 60,
+"finetune_start_layer": 0,
+
+
+{
+    "experiment_no": 1,
+    "time_window_in_seconds": 2,
+    "frames_per_window": 16,
+    "window_stride_by_seconds": 1,
+
+    "encoder_output_dim": 256,
+    "encoder_dropout": 0.2,
+    "temporal_dropout": 0.2,
+
+    "lstm_hidden_dim": 128,
+    "lstm_num_layers": 2,
+
+} # 74, 99 epochs highestval acc 66%
+
+
+{
+    "experiment_no": 2,
+    "time_window_in_seconds": 2,
+    "frames_per_window": 16,
+    "window_stride_by_seconds": 1,
+
+    "encoder_output_dim": 384,
+    "encoder_dropout": 0.3,
+    "temporal_dropout": 0.3,
+
+    "lstm_hidden_dim": 256,
+    "lstm_num_layers": 2,
+}  # 95th epoch 67% val acc
+
+
+{
+    "experiment_no": 3,
+    "time_window_in_seconds": 4,
+    "frames_per_window": 16,
+    "window_stride_by_seconds": 2,
+
+    "encoder_output_dim": 256,
+    "encoder_dropout": 0.3,
+    "temporal_dropout": 0.3,
+
+    "lstm_hidden_dim": 256,
+    "lstm_num_layers": 2,
+} # 175 epoch 70% val acc
+
+{
+    "experiment_no": 4,
+    "time_window_in_seconds": 2,
+    "frames_per_window": 24,
+    "window_stride_by_seconds": 1,
+    "encoder_output_dim": 256,
+    "encoder_dropout": 0.25,
+
+    "temporal_dropout": 0.25,
+
+    "model_name": "lstm",
+    "lstm_hidden_dim": 192,
+    "lstm_num_layers": 3,
+
+} 33 epoch 66% val acc
+
+{
+    "experiment_no": 5,
+    "time_window_in_seconds": 2,
+    "frames_per_window": 16,
+    "window_stride_by_seconds": 2,
+
+    "encoder_output_dim": 256,
+    "encoder_dropout": 0.2,
+    "temporal_dropout": 0.2,
+
+    "lstm_hidden_dim": 128,
+    "lstm_num_layers": 2,
+} 3rd epoch 68 then goes down --> 94epoch 66% val next best
+
+
+
+{
+    "experiment_no": 6,
+    "time_window_in_seconds": 4,
+    "frames_per_window": 24,
+    "window_stride_by_seconds": 2,
+
+    "encoder_output_dim": 256,
+    "encoder_dropout": 0.25,
+    "temporal_dropout": 0.25,
+
+    "lstm_hidden_dim": 192,
+    "lstm_num_layers": 2,
+} 7th epoch 66% --> 71 epoch 64%
+
+
+
+{
+    "experiment_no": 7,
+    "time_window_in_seconds": 2,
+    "frames_per_window": 16,
+    "window_stride_by_seconds": 1,
+
+    "encoder_output_dim": 384,
+    "encoder_dropout": 0.25,
+    "temporal_dropout": 0.25,
+
+    "lstm_hidden_dim": 192,
+    "lstm_num_layers": 2,
+} 19th epoch 66%
+
+
+{
+    "experiment_no": 8,
+    "time_window_in_seconds": 2,
+    "frames_per_window": 24,
+    "window_stride_by_seconds": 1,
+
+    "encoder_output_dim": 384,
+    "encoder_dropout": 0.3,
+    "temporal_dropout": 0.3,
+
+    "lstm_hidden_dim": 256,
+    "lstm_num_layers": 3,
+} 53 epoch 63% acc
+
+
+"2nd wave"
+
+{
+    "experiment_no": 9,
+    "time_window_in_seconds": 4,
+    "frames_per_window": 16,
+    "window_stride_by_seconds": 2,
+
+    "image_height": 60,
+    "image_width": 60,
+
+    "encoder_output_dim": 256,
+    "encoder_dropout": 0.2,
+    "temporal_dropout": 0.2,
+
+    "lstm_hidden_dim": 256,
+    "lstm_num_layers": 2,
+} 32 epoch 69%
+
+
+{
+    "experiment_no": 10,
+    "time_window_in_seconds": 4,
+    "frames_per_window": 24,
+    "window_stride_by_seconds": 2,
+
+    "image_height": 60,
+    "image_width": 60,
+
+    "encoder_output_dim": 256,
+    "encoder_dropout": 0.3,
+    "temporal_dropout": 0.3,
+
+    "lstm_hidden_dim": 256,
+    "lstm_num_layers": 2,
+} 3 epoch 67%
+
+{
+    "experiment_no": 11,
+    "time_window_in_seconds": 4,
+    "frames_per_window": 16,
+    "window_stride_by_seconds": 2,
+
+    "image_height": 60,
+    "image_width": 60,
+
+    "encoder_output_dim": 256,
+    "encoder_dropout": 0.3,
+    "temporal_dropout": 0.3,
+
+    "lstm_hidden_dim": 192,
+    "lstm_num_layers": 2,
+} 4 epoch 68%
+
+{
+    "experiment_no": 12,
+    "time_window_in_seconds": 4,
+    "frames_per_window": 16,
+    "window_stride_by_seconds": 2,
+
+    "image_height": 120,
+    "image_width": 120,
+
+    "encoder_output_dim": 256,
+    "encoder_dropout": 0.3,
+    "temporal_dropout": 0.3,
+
+    "lstm_hidden_dim": 256,
+    "lstm_num_layers": 2,
+} 70 epoch 76.0%
+
+{
+    "experiment_no": 13,
+    "time_window_in_seconds": 4,
+    "frames_per_window": 16,
+    "window_stride_by_seconds": 2,
+    "image_height": 60,
+    "image_width": 60,
+    "encoder_output_dim": 256,
+    "encoder_dropout": 0.2,
+    "temporal_dropout": 0.2,
+    "lstm_hidden_dim": 256,
+    "lstm_num_layers": 2,
+} 32 e 69%
+
+{
+    "experiment_no": 14,
+    "time_window_in_seconds": 4,
+    "frames_per_window": 24,
+    "window_stride_by_seconds": 2,
+    "image_height": 60,
+    "image_width": 60,
+    "encoder_output_dim": 256,
+    "encoder_dropout": 0.3,
+    "temporal_dropout": 0.3,
+    "lstm_hidden_dim": 256,
+    "lstm_num_layers": 2,
+} 84epoc 67%
+
+
+{
+    "experiment_no": 15,
+    "time_window_in_seconds": 4,
+    "frames_per_window": 16,
+    "window_stride_by_seconds": 2,
+    "image_height": 60,
+    "image_width": 60,
+    "encoder_output_dim": 256,
+    "encoder_dropout": 0.3,
+    "temporal_dropout": 0.3,
+    "lstm_hidden_dim": 192,
+    "lstm_num_layers": 2,
+} 4epoch 68%
+
+
+{
+    "experiment_no": 17,
+    "time_window_in_seconds": 4,
+    "frames_per_window": 16,
+    "window_stride_by_seconds": 2,
+    "image_height": 96,
+    "image_width": 96,
+    "encoder_output_dim": 256,
+    "encoder_dropout": 0.3,
+    "temporal_dropout": 0.3,
+    "lstm_hidden_dim": 256,
+    "lstm_num_layers": 2,
+} 92 epoch 76.38%
+
+I skipped 16 eperiment, no any reason just did that
+it seems increasing the image size more than 60 improve somewhat
+
+
+
+
+{
+    "experiment_no": 18,
+    "time_window_in_seconds": 4,
+    "frames_per_window": 16,
+    "window_stride_by_seconds": 2,
+
+    "image_height": 112,
+    "image_width": 112,
+
+    "encoder_output_dim": 256,
+    "encoder_dropout": 0.3,
+    "temporal_dropout": 0.3,
+
+    "lstm_hidden_dim": 256,
+    "lstm_num_layers": 2,
+}epoch 35 77%acc
+
+
+
+{
+    "experiment_no": 19,
+    "time_window_in_seconds": 4,
+    "frames_per_window": 16,
+    "window_stride_by_seconds": 2,
+
+    "image_height": 128,
+    "image_width": 128,
+
+    "encoder_output_dim": 256,
+    "encoder_dropout": 0.3,
+    "temporal_dropout": 0.3,
+
+    "lstm_hidden_dim": 256,
+    "lstm_num_layers": 2,
+} epoch 150 suddenly goes to 79% the nextepoch 62% then next 75% then 69
+other than that scenario val ac is 76% 105 epoch
+
+{
+    "experiment_no": 20,
+    "time_window_in_seconds": 4,
+    "frames_per_window": 16,
+    "window_stride_by_seconds": 2,
+
+    "image_height": 96,
+    "image_width": 96,
+
+    "encoder_output_dim": 384,
+    "encoder_dropout": 0.3,
+    "temporal_dropout": 0.3,
+
+    "lstm_hidden_dim": 256,
+    "lstm_num_layers": 2,
+} epcoh 90 75% not better than prev 2 waves, but not bad or worse
+
+
+
+{
+    "experiment_no": 21,
+    "time_window_in_seconds": 4,
+    "frames_per_window": 16,
+    "window_stride_by_seconds": 2,
+
+    "image_height": 120,
+    "image_width": 120,
+
+    "encoder_output_dim": 384,
+    "encoder_dropout": 0.3,
+    "temporal_dropout": 0.3,
+
+    "lstm_hidden_dim": 256,
+    "lstm_num_layers": 2,
+} 77% at epoch 40
+
+
+{
+    "experiment_no": 22,
+    "time_window_in_seconds": 4,
+    "frames_per_window": 16,
+    "window_stride_by_seconds": 2,
+
+    "image_height": 96,
+    "image_width": 96,
+
+    "encoder_output_dim": 256,
+    "encoder_dropout": 0.4,
+    "temporal_dropout": 0.4,
+
+    "lstm_hidden_dim": 256,
+    "lstm_num_layers": 2,
+} 75% at 180th epoch
+
+
+{
+    "experiment_no": 23,
+    "time_window_in_seconds": 4,
+    "frames_per_window": 16,
+    "window_stride_by_seconds": 2,
+
+    "image_height": 120,
+    "image_width": 120,
+
+    "encoder_output_dim": 256,
+    "encoder_dropout": 0.4,
+    "temporal_dropout": 0.4,
+
+    "lstm_hidden_dim": 256,
+    "lstm_num_layers": 2,
+} good wave like didnt go too down like  , 82 epoch 76.3%
+
+{
+    "experiment_no": 24,
+    "time_window_in_seconds": 4,
+    "frames_per_window": 16,
+    "window_stride_by_seconds": 2,
+
+    "image_height": 96,
+    "image_width": 96,
+
+    "encoder_output_dim": 256,
+    "encoder_dropout": 0.3,
+    "temporal_dropout": 0.3,
+
+    "lstm_hidden_dim": 384,
+    "lstm_num_layers": 2,
+} 70 and 150 epcoh 75.7%
+
+{
+    "experiment_no": 25,
+    "time_window_in_seconds": 4,
+    "frames_per_window": 16,
+    "window_stride_by_seconds": 2,
+
+    "image_height": 96,
+    "image_width": 96,
+
+    "encoder_output_dim": 256,
+    "encoder_dropout": 0.3,
+    "temporal_dropout": 0.3,
+
+    "lstm_hidden_dim": 256,
+    "lstm_num_layers": 1,
+} 74% 78 epoch
+
+
+
+{
+    "experiment_no": 26,
+    "image_height": 96,
+    "image_width": 96,
+    "encoder_backbone_name": "mobilenet_v3_large",
+    "time_window_in_seconds": 4,
+    "frames_per_window": 16,
+    "window_stride_by_seconds": 2,
+    "encoder_output_dim": 256,
+    "encoder_dropout": 0.3,
+    "temporal_dropout": 0.3,
+    "loss_type": "bce",
+    "lstm_hidden_dim": 256,
+    "lstm_num_layers": 2,
+
+}79 epoch 76%
